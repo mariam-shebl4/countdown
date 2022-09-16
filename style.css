@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana;
+
+}
+body{
+    background-color: #fff;
+    padding: 50px 100px;
+    
+}
+.dark-mode {
+  background-color: rgba(0, 0, 0, 0.932);
+  color: #fff;
+  
+}
+.darkbtn{
+    background-color: black;
+    border-color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    margin-bottom: 1px;
+}
+.wave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .logo{
+    position: relative;
+    color:#530347;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav {
+    position: relative;
+}
+header nav ul{
+    position: relative;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    color: #530347;
+    font-size: 18px;
+    text-decoration: none;
+    transition:  1s;
+}
+
+header nav ul li a:hover{
+    color: #a1048a;
+    transition:  1s;
+   
+}
+
+/*section*/
+.fsection{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97vh;
+    margin-top: 46px;
+    
+}
+
+.fsection .contentbx{
+    position: relative;
+    max-width: 600px;
+    
+}
+
+.fsection .contentbx h2{
+    font-size: 60px;
+    color: #530347;
+    text-transform: uppercase;
+}
+
+.fsection .contentbx p :not(.invalid){
+    font-size: 18px;
+    color: #530347;
+}
+
+.fsection .contentbx .countdown{
+    display: flex;
+    margin: 20px 0;
+}
+
+.fsection .contentbx .countdown .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cornsilk;
+    margin-right: 20px;
+    font-size: 48px;
+    min-width: 110px;
+    font-weight: 700;
+    padding: 10px 5px 15px;
+    border-radius: 4px;
+    color: #530347;
+}
+
+.fsection .contentbx .countdown .time span{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #026b6b;
+    padding: 5px;
+   
+}
+
+.btn{
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #530347;
+    border-color: #530347;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 40px;
+    transition: .5s;
+    border: solid .8px;
+}
+.btn:hover{
+    background: none;
+    border: #530347 1px solid;
+    color:#530347;
+    transition: .5s;
+}
+/*modal*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.content{
+   
+  margin: 0 20% 15% 10%; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 200px;
+  top: 5px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 60px;
+  
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/*social media*/
+
+/*icon*/
+    ul.social-network {
+list-style: none;
+display: inline;
+margin-left: 0 !important;
+padding: 0
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 1.5s;
+}
+
+.social-circle i {
+    color: #530347;
+    transition: all 1.5s;
+    transition: all 1.5s;
+}
+/**/
+/*password valibation*/
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  margin: 10px 18px ;
+  background-color: #f44336;
+  border-color: #f44336;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border: solid .9px;
+  transition: all .5s;
+}
+
+.cancelbtn:hover{
+    background-color: #af1e13;
+  border-color: #af1e13;
+}
+
+
+
+/* Style the container for inputs */
+.container {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 50px;
+  width: 75%;
+  height: 75vh;
+  z-index: 3;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*second section hidden and display content*/
+.secondsection{
+    margin: 40px 0;
+   
+}
+#hidden{
+    margin: 30px 50px;
+    font-size: 30px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+.clcf{
+    justify-content: space-around;
+}
+/*calculator*/
+.buttonclc {
+    width: 50px;
+    height: 60px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    box-shadow:inset -9px 4px 16px -9px #23395e;
+	background-color:#6e2e68;
+	border-radius:3px;
+	border:3px solid #3b0545;
+	color:#ffffff;
+	font-weight:bold;
+	padding:11px 9px;
+	text-shadow:1px 1px 9px #8d099c;
+}
+.buttonclc:hover{
+    background-color:#7a076f;
+}
+
+.equal{
+    background-color:#03723b;
+    border-color: rgb(6, 71, 41);
+}
+table{
+    background-color: rgba(10, 68, 58, 0.685);
+    
+}
+.textview{
+    width: 225px;
+    height: 60px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    
+    background-color: #eedbe9;
+    color: #000000;
+    
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(127,110,126,.41);
+     
+}
+
+@media (max-width: 600px){
+
+     .darkbtn{
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            font-size: 15px; 
+     }
+
+      .fsection{
+          display: block;
+          margin-top: 100px;
+          min-height: 60vh;
+      }
+
+      .imgsvg{
+          width: 200px;
+          height: 200px;
+          float: none;
+          margin: auto;
+      }
+      .fsection .contentbx h2{
+          font-size: 25px;
+      }
+
+       .fsection .contentbx .countdown .time{
+    font-size: 15px;
+    min-width: 80px;
+    font-weight: 700;
+    padding: 10px 5px 15px;
+    border-radius: 4px;
+    color: #530347;
+}
+
+     .fsection .contentbx .countdown .time span{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #026b6b;
+    padding: 5px;
+   
+}
+
+
+}
+
+@media (max-width: 768px){
+        .fsection{
+               display: block;
+               margin-top: 150px;
+               min-height: 60vh;
+          }
+
+        .imgsvg{
+            width: 500px;
+            height: 500px;
+        }
+        .fsection .contentbx h2{
+            font-size: 30px;
+        }
+    
+
+       .fsection .contentbx .countdown .time{
+    font-size: 20px;
+    min-width: 80px;
+    font-weight: 700;
+    padding: 10px 5px 15px;
+    border-radius: 4px;
+    color: #530347;
+}
+
+     .fsection .contentbx .countdown .time span{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #026b6b;
+    padding: 5px;
+   
+}
+
+
+
+}
+
+@media (max-width: 992px){
+    .wave{
+        width: 200vh;
+    }
+
+    .fsection{
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 1200px){
+       .wave{
+        width: 100%;
+    }
+}
+
